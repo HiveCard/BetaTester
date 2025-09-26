@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiveCard - About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Source Sans Pro', 'sans-serif'],
+                    },
+                    colors: {
+                        'hive-yellow': '#FFC107',
+                        'hive-dark': '#2C3E50',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="bg-hive-yellow rounded-full p-2 mr-3">
+                        <i class="fas fa-th-large text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">Hive Card</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Contact Us</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">About Us</a>
+                </nav>
+                <button class="bg-hive-yellow text-white px-6 py-2 rounded-full hover:bg-yellow-500 transition">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-100 py-16 relative overflow-hidden">
+        <div class="absolute top-10 left-10 w-8 h-8 bg-hive-yellow rounded transform rotate-45"></div>
+        <div class="absolute top-32 right-20 w-6 h-6 bg-hive-yellow rounded-full"></div>
+        <div class="absolute bottom-20 left-1/4 w-4 h-4 bg-hive-yellow rounded"></div>
+        <div class="absolute bottom-10 right-10 w-10 h-10 bg-hive-yellow rounded transform rotate-45"></div>
+        
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <div class="flex justify-center mb-6">
+                <div class="bg-hive-yellow rounded-full p-4">
+                    <i class="fas fa-th-large text-white text-2xl"></i>
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                About HiveCard – Bringing Order to the Buzz of Credit Card Life
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Discover how we're revolutionizing credit card management for Filipinos through innovation, simplicity, and the power of the hive.
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-16 bg-white relative">
+        <div class="absolute top-10 left-10 w-6 h-6 bg-hive-yellow rounded transform rotate-45"></div>
+        <div class="absolute bottom-10 right-10 w-8 h-8 bg-hive-yellow rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-star text-hive-yellow text-2xl mr-3"></i>
+                        <h2 class="text-3xl font-bold text-gray-800">Our Story</h2>
+                    </div>
+                    <div class="space-y-6 text-gray-600">
+                        <p>
+                            HiveCard was born from the chaos of modern credit card life. Our founders experienced firsthand the overwhelming buzz of managing multiple cards, tracking rewards, and staying on top of payments.
+                        </p>
+                        <p>
+                            Like busy bees in a hive, we realized that organization and collaboration were key to success. We set out to create a platform that would bring the same level of efficiency and harmony to credit card management.
+                        </p>
+                        <p>
+                            What started as a simple idea has grown into a comprehensive platform trusted by thousands of Filipinos to manage their financial lives with confidence.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="images/dashboard-analytics.png" alt="Dashboard Analytics" class="w-full rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="py-16 bg-gray-50 relative">
+        <div class="absolute top-20 left-20 w-4 h-4 bg-hive-yellow rounded"></div>
+        <div class="absolute bottom-20 right-20 w-6 h-6 bg-hive-yellow rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <img src="images/person-laptop.jpg" alt="Person using laptop" class="w-full rounded-lg shadow-lg">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-bullseye text-hive-yellow text-2xl mr-3"></i>
+                        <h2 class="text-3xl font-bold text-gray-800">Our Mission</h2>
+                    </div>
+                    <div class="space-y-6 text-gray-600">
+                        <p>
+                            We're on a mission to help every Filipino manage their credit cards simply and securely. In a country where financial literacy is growing and digital payments are becoming the norm, we believe everyone deserves access to powerful financial tools.
+                        </p>
+                        <p>
+                            Our platform is designed with Filipino values in mind – family-first thinking, community support, and practical solutions that work in real life.
+                        </p>
+                        <p>
+                            We're not just building software; we're building a movement towards better financial health for all Filipinos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hive Section -->
+    <section class="py-16 bg-hive-yellow relative">
+        <div class="absolute top-10 left-10 w-6 h-6 bg-white bg-opacity-30 rounded transform rotate-45"></div>
+        <div class="absolute bottom-10 right-10 w-8 h-8 bg-white bg-opacity-30 rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="flex justify-center items-center mb-6">
+                    <i class="fas fa-star text-white text-2xl mr-3"></i>
+                    <h2 class="text-3xl font-bold text-white">Why 'Hive'?</h2>
+                </div>
+                <p class="text-white text-lg">
+                    The hive represents everything we stand for – organization, efficiency, collaboration, and sweet rewards.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-8 text-center shadow-lg">
+                    <div class="bg-hive-yellow rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-sitemap text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Organization</h3>
+                    <p class="text-gray-600">
+                        Like bees organizing their hive, we help you organize your financial life with structure and purpose.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-8 text-center shadow-lg">
+                    <div class="bg-hive-yellow rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tachometer-alt text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Efficiency</h3>
+                    <p class="text-gray-600">
+                        Every action in our platform is designed for maximum efficiency, just like the perfect hexagon structure of a hive.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-8 text-center shadow-lg">
+                    <div class="bg-hive-yellow rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Sweet Rewards</h3>
+                    <p class="text-gray-600">
+                        Just as bees create honey, we help you maximize the sweet rewards from your credit cards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-16 bg-gray-100 relative">
+        <div class="absolute top-10 left-10 w-4 h-4 bg-hive-yellow rounded"></div>
+        <div class="absolute bottom-10 right-10 w-6 h-6 bg-hive-yellow rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="flex justify-center items-center mb-6">
+                    <i class="fas fa-heart text-hive-yellow text-2xl mr-3"></i>
+                    <h2 class="text-3xl font-bold text-gray-800">Our Values</h2>
+                </div>
+                <p class="text-gray-600 text-lg">
+                    The principles that guide everything we do.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg p-6 text-center shadow-lg">
+                    <div class="bg-hive-yellow rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Simplicity</h3>
+                    <p class="text-gray-600 text-sm">Complex problems, simple solutions</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 text-center shadow-lg">
+                    <div class="bg-hive-yellow rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Trust</h3>
+                    <p class="text-gray-600 text-sm">Your security is our priority</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 text-center shadow-lg">
+                    <div class="bg-hive-yellow rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-eye text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Insight</h3>
+                    <p class="text-gray-600 text-sm">Data-driven financial wisdom</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 text-center shadow-lg">
+                    <div class="bg-hive-yellow rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-rocket text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Innovation</h3>
+                    <p class="text-gray-600 text-sm">Always evolving, always improving</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team Section -->
+    <section class="py-16 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="flex justify-center items-center mb-6">
+                    <i class="fas fa-users text-hive-yellow text-2xl mr-3"></i>
+                    <h2 class="text-3xl font-bold text-gray-800">Meet the Team</h2>
+                </div>
+                <p class="text-gray-600 text-lg">
+                    The busy bees behind HiveCard
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Jessica M.</h3>
+                    <p class="text-sm text-gray-600 mb-1">CEO & Founder</p>
+                    <p class="text-xs text-gray-500">Visionary Leader</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Mike T.</h3>
+                    <p class="text-sm text-gray-600 mb-1">CTO & Co-founder</p>
+                    <p class="text-xs text-gray-500">Technical Architect</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Sarah L.</h3>
+                    <p class="text-sm text-gray-600 mb-1">Head of Design</p>
+                    <p class="text-xs text-gray-500">UX/UI Designer</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user text-orange-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Alex R.</h3>
+                    <p class="text-sm text-gray-600 mb-1">Lead Developer</p>
+                    <p class="text-xs text-gray-500">Full-stack Engineer</p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user text-gray-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Amanda Payliss</h3>
+                    <p class="text-sm text-gray-600 mb-1">Customer Success Manager</p>
+                    <p class="text-xs text-gray-500">Client Relations</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user text-gray-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Shane Bold</h3>
+                    <p class="text-sm text-gray-600 mb-1">Marketing Director</p>
+                    <p class="text-xs text-gray-500">Brand Strategy</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user text-gray-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Kawasaki Chen</h3>
+                    <p class="text-sm text-gray-600 mb-1">Product Manager</p>
+                    <p class="text-xs text-gray-500">Product Strategy</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <div class="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user text-gray-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Brewster Shark</h3>
+                    <p class="text-sm text-gray-600 mb-1">Data Analyst</p>
+                    <p class="text-xs text-gray-500">Business Intelligence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-hive-yellow relative overflow-hidden">
+        <div class="absolute top-10 left-10 w-8 h-8 bg-white bg-opacity-30 rounded transform rotate-45"></div>
+        <div class="absolute bottom-10 right-10 w-6 h-6 bg-white bg-opacity-30 rounded-full"></div>
+        
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">
+                Ready to Join the Hive?
+            </h2>
+            <button class="bg-white text-hive-yellow px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition text-lg">
+                Join the Buzz
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-hive-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-hive-yellow rounded-full p-2 mr-3">
+                            <i class="fas fa-th-large text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">Hive Card</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your statement view.</p>
+                    <p class="text-gray-400 mb-4">Every Card in One Place.</p>
+                    <div class="flex space-x-4">
+                        <i class="fab fa-twitter text-gray-400 hover:text-white cursor-pointer"></i>
+                        <i class="fab fa-facebook text-gray-400 hover:text-white cursor-pointer"></i>
+                        <i class="fab fa-linkedin text-gray-400 hover:text-white cursor-pointer"></i>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Features</a></li>
+                        <li><a href="#" class="hover:text-white">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white">Security</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">API Docs</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HiveCard — Smart Credit Card Hub</title>
+  <meta name="description" content="HiveCard lets you track statements, due dates, and pay smarter." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">
+      <span class="logo">🐝</span>
+      <span class="name">HiveCard</span>
+    </div>
+    <a class="cta small" href="#signup">Get updates</a>
+  </header>
+
+  <main class="hero">
+    <h1>All your cards, one <span class="accent">smart</span> hive.</h1>
+    <p class="sub">
+      Consolidate statements, track due dates, and avoid fees—beautifully.
+    </p>
+    <div class="actions">
+      <a href="#signup" class="cta">Join the waitlist</a>
+      <a href="#features" class="ghost">Learn more</a>
+    </div>
+    <div class="mock"></div>
+  </main>
+
+  <section id="features" class="features">
+    <div class="card">
+      <h3>Unified dashboard</h3>
+      <p>See all balances, limits, and due dates at a glance.</p>
+    </div>
+    <div class="card">
+      <h3>PDF ingestion</h3>
+      <p>Import statements; we parse and surface the essentials.</p>
+    </div>
+    <div class="card">
+      <h3>Smart reminders</h3>
+      <p>Never miss a payment again with timely nudges.</p>
+    </div>
+  </section>
+
+  <section id="signup" class="signup">
+    <h2>Get launch updates</h2>
+    <p>Be first to know when HiveCard goes live.</p>
+
+    <!-- TODO: Wire this up in the next step (Formspree, Zoho Forms, etc.) -->
+    <form class="form" action="#" method="POST" onsubmit="return false;">
+      <input type="email" name="email" placeholder="you@domain.com" required />
+      <button type="submit">Notify me</button>
+      <small class="hint">We’ll set this to submit to your provider next.</small>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <span>© <span id="y"></span> HiveCard • Made with ❤️ in PH</span>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

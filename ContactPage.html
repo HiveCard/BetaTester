@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hive Card - Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Source Sans Pro', 'sans-serif'],
+                    },
+                    colors: {
+                        'hive-yellow': '#F4D03F',
+                        'hive-dark': '#2C3E50',
+                        'hive-gray': '#95A5A6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-hive-yellow rounded-lg flex items-center justify-center">
+                        <i class="fas fa-th text-hive-dark text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold text-hive-dark">Hive <span class="text-hive-yellow">Card</span></span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-hive-dark transition-colors">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-hive-dark transition-colors">Contact Us</a>
+                    <a href="#" class="text-gray-700 hover:text-hive-dark transition-colors">About Us</a>
+                </div>
+                
+                <button class="bg-hive-yellow text-hive-dark px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
+                    Sign In
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 relative">
+        <!-- Decorative Elements -->
+        <div class="absolute top-10 left-10 w-16 h-16 bg-hive-yellow rounded-lg opacity-60"></div>
+        <div class="absolute top-20 right-20 w-8 h-8 bg-hive-yellow rounded-lg opacity-80"></div>
+        <div class="absolute bottom-40 left-20 w-4 h-4 bg-hive-yellow rounded-full"></div>
+        <div class="absolute bottom-20 right-40 w-6 h-6 bg-hive-yellow rounded-full"></div>
+        <div class="absolute top-1/2 right-10 w-12 h-12 bg-hive-yellow rounded-lg opacity-70"></div>
+
+        <!-- Contact Header Section -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 relative z-10">
+            <div class="flex items-center justify-center mb-6">
+                <div class="w-16 h-16 bg-hive-dark rounded-lg flex items-center justify-center mr-6">
+                    <i class="fas fa-envelope text-white text-2xl"></i>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-3xl md:text-4xl font-bold text-hive-dark mb-4">Contact Us – Let's Stay Connected</h1>
+                    <p class="text-gray-600 text-lg">Have questions? We're here to help. Reach out to our team through any of the channels below.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Customer Support -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-tools text-hive-dark text-2xl mr-4"></i>
+                        <h2 class="text-2xl font-bold text-hive-dark">Customer Support</h2>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3">Support Hours</h3>
+                        <div class="space-y-2 text-gray-600">
+                            <p><span class="font-medium">Monday - Friday:</span> 9:00 AM - 6:00 PM (GMT+8)</p>
+                            <p><span class="font-medium">Saturday:</span> 10:00 AM - 4:00 PM (GMT+8)</p>
+                            <p><span class="font-medium">Sunday:</span> Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-hive-dark text-xl mr-4 w-6"></i>
+                        <span class="text-gray-700">support@hivecard.ph</span>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <i class="fas fa-phone text-hive-dark text-xl mr-4 w-6"></i>
+                        <span class="text-gray-700">+63 912 345 6789</span>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <i class="fas fa-comments text-hive-dark text-xl mr-4 w-6"></i>
+                        <span class="text-gray-700">Live Chat (In-App)</span>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-hive-dark text-xl mr-4 w-6"></i>
+                        <span class="text-gray-700">Hivecard HQ, Subic Bay</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-hive-yellow rounded-lg flex items-center justify-center">
+                            <i class="fas fa-th text-hive-dark text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">Hive <span class="text-hive-yellow">Card</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your Statement Hive,<br>Every Card In One Place.</p>
+                    <div class="flex space-x-4">
+                        <i class="fab fa-twitter text-gray-400 hover:text-hive-yellow cursor-pointer transition-colors"></i>
+                        <i class="fab fa-linkedin text-gray-400 hover:text-hive-yellow cursor-pointer transition-colors"></i>
+                        <i class="fas fa-credit-card text-gray-400 hover:text-hive-yellow cursor-pointer transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Product</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Tutorials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 HiveCard. All rights reserved. Buzz responsibly.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

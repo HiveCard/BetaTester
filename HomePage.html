@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiveCard - Your Statement Hive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'source-sans': ['Source Sans Pro', 'sans-serif']
+                    },
+                    colors: {
+                        'hive-yellow': '#ffd633',
+                        'hive-orange': '#f59e0b',
+                        'hive-dark': '#1f2937'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-inter">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-12 h-12 bg-hive-yellow rounded-lg flex items-center justify-center">
+                        <i class="fas fa-th-large text-hive-dark text-xl"></i>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-2xl font-bold text-hive-dark">Hive</span>
+                        <span class="text-2xl font-bold text-hive-orange">Card</span>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-hive-dark font-medium hover:text-hive-orange transition-colors">Home</a>
+                    <a href="#" class="text-hive-dark font-medium hover:text-hive-orange transition-colors">Contact Us</a>
+                    <a href="#" class="text-hive-dark font-medium hover:text-hive-orange transition-colors">About Us</a>
+                </nav>
+                
+                <button class="bg-gradient-to-b from-hive-yellow to-hive-orange text-white px-6 py-2 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all">
+                    Sign In
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-100 overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-8 w-8 h-8 bg-hive-yellow rounded-full opacity-60"></div>
+            <div class="absolute top-16 left-16 w-3 h-3 bg-orange-600 rounded-full"></div>
+            <div class="absolute top-24 left-4 w-2 h-2 bg-orange-800 rounded-full"></div>
+            <div class="absolute top-12 right-8 w-8 h-8 bg-hive-yellow"></div>
+            <div class="absolute top-40 right-4 w-4 h-4 bg-yellow-300 rounded-full"></div>
+            <div class="absolute top-48 left-12 w-9 h-9 bg-yellow-200"></div>
+            <div class="absolute bottom-40 right-8 w-6 h-6 bg-yellow-200 rounded-full"></div>
+            <div class="absolute bottom-20 left-4 w-4 h-4 bg-yellow-300 rounded-full"></div>
+            <div class="absolute bottom-60 right-20 w-16 h-16 bg-yellow-400 rounded-full"></div>
+            <div class="absolute bottom-80 left-8 w-8 h-8 bg-hive-yellow rounded-full"></div>
+            <div class="absolute bottom-72 left-12 w-2 h-2 bg-orange-800 rounded-full"></div>
+            <div class="absolute top-80 left-8 w-8 h-8 bg-hive-yellow"></div>
+            <div class="absolute top-72 right-12 w-4 h-4 bg-yellow-300 rounded-full"></div>
+            <div class="absolute bottom-40 center w-5 h-5 bg-yellow-200"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <!-- Hero Icon -->
+            <div class="flex justify-center mb-8">
+                <div class="w-32 h-32 bg-hive-yellow rounded-full flex items-center justify-center shadow-lg">
+                    <i class="fas fa-th-large text-hive-dark text-5xl"></i>
+                </div>
+            </div>
+
+            <!-- Hero Text -->
+            <div class="text-center">
+                <h1 class="text-6xl md:text-7xl font-bold text-hive-dark mb-4">
+                    Your Statement <span class="text-hive-orange">Hive</span>
+                </h1>
+                <p class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+                    Every card in one place
+                </p>
+                <p class="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-12 leading-relaxed">
+                    Manage all your credit cards with the efficiency of a hive. Track spending, get smart alerts, and make payments seamlessly.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button class="border-2 border-hive-orange text-hive-orange px-8 py-3 rounded-xl font-semibold text-lg hover:bg-hive-orange hover:text-white transition-all">
+                        Watch Demo
+                    </button>
+                    <button class="bg-hive-dark text-white px-8 py-3 rounded-xl font-semibold text-lg hover:bg-gray-800 transition-all">
+                        Join Beta
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-bold text-hive-dark mb-6">
+                    Why Choose HiveCard?
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto">
+                    Experience the power of unified card management with our innovative features designed for modern financial needs.
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Payment Reminders -->
+                <div class="bg-gray-50 rounded-xl p-8 text-center">
+                    <div class="w-20 h-20 bg-white rounded-lg mx-auto mb-6 flex items-center justify-center shadow-md">
+                        <i class="fas fa-bell text-hive-orange text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-700 mb-4">Payment Reminders</h3>
+                    <p class="text-lg text-gray-600">
+                        Alerts before due dates to avoid late fees and penalties.
+                    </p>
+                </div>
+
+                <!-- Automatic Parsing -->
+                <div class="border-2 border-hive-orange rounded-xl p-8 text-center bg-white">
+                    <div class="w-20 h-20 bg-hive-yellow rounded-lg mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-file-alt text-hive-dark text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-700 mb-4">Automatic Parsing</h3>
+                    <p class="text-lg text-gray-600">
+                        HiveCard instantly reads your statements with no manual typing needed by scanning your SOA
+                    </p>
+                </div>
+
+                <!-- Suspicious Charge Alerts -->
+                <div class="bg-gray-50 rounded-xl p-8 text-center">
+                    <div class="w-20 h-20 bg-white rounded-lg mx-auto mb-6 flex items-center justify-center shadow-md">
+                        <i class="fas fa-shield-alt text-hive-orange text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-700 mb-4">Suspicious Charge Alerts</h3>
+                    <p class="text-lg text-gray-600">
+                        Flags unusual charges and notifies you immediately.
+                    </p>
+                </div>
+
+                <!-- Pay Bills Instantly -->
+                <div class="border-2 border-hive-orange rounded-xl p-8 text-center bg-white">
+                    <div class="w-20 h-20 bg-hive-yellow rounded-lg mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-credit-card text-hive-dark text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-700 mb-4">Pay Bills Instantly</h3>
+                    <p class="text-lg text-gray-600">
+                        Link to e-wallets like GCash and Maya for quick payments.
+                    </p>
+                </div>
+
+                <!-- Privacy & Security -->
+                <div class="bg-gray-50 rounded-xl p-8 text-center">
+                    <div class="w-20 h-20 bg-white rounded-lg mx-auto mb-6 flex items-center justify-center shadow-md">
+                        <i class="fas fa-lock text-hive-orange text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-700 mb-4">Privacy & Security</h3>
+                    <p class="text-lg text-gray-600">
+                        Bank-level encryption, cloud backups, and no data sharing.
+                    </p>
+                </div>
+
+                <!-- Easy Exports -->
+                <div class="border-2 border-hive-orange rounded-xl p-8 text-center bg-white">
+                    <div class="w-20 h-20 bg-hive-yellow rounded-lg mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-download text-hive-dark text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-700 mb-4">Easy Exports</h3>
+                    <p class="text-lg text-gray-600">
+                        Export clean, detailed reports for taxes and budgeting.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-bold text-hive-dark mb-6">
+                    How It Works?
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto">
+                    Get started with HiveCard in three simple steps and take control of your financial life.
+                </p>
+            </div>
+
+            <!-- Steps -->
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-hive-yellow rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <span class="text-2xl font-bold text-white">1</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-700 mb-4">Connect Your Cards</h3>
+                    <p class="text-lg text-gray-600 max-w-sm mx-auto">
+                        Securely link all your credit cards to the HiveCard platform.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-hive-yellow rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <span class="text-2xl font-bold text-white">2</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-700 mb-4">Track & Analyze</h3>
+                    <p class="text-lg text-gray-600 max-w-sm mx-auto">
+                        Monitor your spending patterns and get personalized insights.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-hive-yellow rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <span class="text-2xl font-bold text-white">3</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-700 mb-4">Manage & Pay</h3>
+                    <p class="text-lg text-gray-600 max-w-sm mx-auto">
+                        Make informed decisions and handle payments effortlessly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-hive-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-12 h-12 bg-hive-yellow rounded-lg flex items-center justify-center">
+                            <i class="fas fa-th-large text-hive-dark text-xl"></i>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl font-bold text-white">Hive</span>
+                            <span class="text-2xl font-bold text-hive-orange">Card</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Your Statement Hive,<br>
+                        Every Card in One Place.
+                    </p>
+                    <div class="flex space-x-4">
+                        <i class="fab fa-twitter text-gray-400 hover:text-hive-orange cursor-pointer text-xl"></i>
+                        <i class="fab fa-linkedin text-gray-400 hover:text-hive-orange cursor-pointer text-xl"></i>
+                        <i class="fas fa-book text-gray-400 hover:text-hive-orange cursor-pointer text-xl"></i>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Features</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Tutorials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">© 2025 HiveCard. All rights reserved. Buzz responsibly.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
