@@ -193,7 +193,7 @@
     </section>
 
     <!-- Signup (Zoho Form Embed) -->
-    <section id="signup" class="bg-white py-20">
+    <section id="signup" class="bg-white py-20 hidden">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-8">
           <h2 class="text-4xl md:text-5xl font-bold text-hive-dark mb-4">Join the Beta</h2>
@@ -327,5 +327,23 @@
             </div>
         </div>
     </footer>
+	
+<script>
+  document.querySelectorAll('a[href="#signup"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const signup = document.getElementById('signup');
+
+      if (signup.classList.contains('hidden')) {
+        signup.classList.remove('hidden');   // show
+        signup.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        signup.classList.add('hidden');      // hide
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // scroll back to top (optional)
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
